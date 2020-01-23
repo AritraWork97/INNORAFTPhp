@@ -125,6 +125,7 @@
             
 ?>
 <?php
+        echo "<p><a class='btn btn-lg btn-success' href='../LOGIN/logout.php' role='button'>Log out</a></p>";
         echo ("<img src=$target_path>");
         echo "<h1>Name : $fullname</h1>";
         if($phone != "Number is incorrect")

@@ -94,6 +94,7 @@
             }
 ?>
 <?php
+      echo "<p><a class='btn btn-lg btn-success' href='../LOGIN/logout.php' role='button'>Log out</a></p>";
       echo ("<img src=$target_path>");
       echo "<h1>Hello $fullname</h1>";
       echo ("<h2>Your phone number is $phone");
@@ -109,5 +110,4 @@
                      echo "<td>" . $key . "</td>";
                      echo "<td>" . $value . "</td>";
             }
-      echo "<p><a class='btn btn-lg btn-success' href='../LOGIN/logout.php' role='button'>Log out</a></p>";
 ?>

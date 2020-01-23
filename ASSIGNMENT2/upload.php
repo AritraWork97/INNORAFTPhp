@@ -61,7 +61,7 @@
       }
 ?>
 <?php
+    echo "<p><a class='btn btn-lg btn-success' href='../LOGIN/logout.php' role='button'>Log out</a></p>";
       echo "<h1>Hello $fullname</h1>";
       echo ("<img src=$target_path>");
-      echo "<p><a class='btn btn-lg btn-success' href='../LOGIN/logout.php' role='button'>Log out</a></p>";
 ?>

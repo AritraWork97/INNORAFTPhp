@@ -74,6 +74,7 @@
       }
 ?>
 <?php
+    echo "<p><a class='btn btn-lg btn-success' href='../LOGIN/logout.php' role='button'>Log out</a></p>";
       echo ("<img src=$target_path>");
       echo "<h1>Hello $fullname</h1>";
       echo "<table border='2' class='stats' cellspacing='0'>
@@ -88,5 +89,5 @@
                      echo "<td>" . $key . "</td>";
                      echo "<td>" . $value . "</td>";
             }
-      echo "<p><a class='btn btn-lg btn-success' href='../LOGIN/logout.php' role='button'>Log out</a></p>";
+
 ?>
