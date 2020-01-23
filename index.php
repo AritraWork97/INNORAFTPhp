@@ -12,27 +12,27 @@
                $requested_route = $_GET["q"];
                if($requested_route === '1')
                {
-                  header("location:../ASSIGNMENT1/index.php");
+                  header("location:./ASSIGNMENT1/index.php");
                   exit;
                }
                else if($requested_route === '2')
                {
-                  header("location:../ASSIGNMENT2/index.php");
+                  header("location:./ASSIGNMENT2/index.php");
                   exit;
                }
                else if($requested_route === '3')
                {
-                  header("location:../ASSIGNMENT3/index.php");
+                  header("location:./ASSIGNMENT3/index.php");
                   exit;
                }
                else if($requested_route === '4')
                {
-                  header("location:../ASSIGNMENT4/index.php");
+                  header("location:./ASSIGNMENT4/index.php");
                   exit;
                }
                else if($requested_route === '6')
                {
-                  header("location:../ASSIGNMENT6/index.php");
+                  header("location:./ASSIGNMENT6/index.php");
                   exit;
                }
             }
