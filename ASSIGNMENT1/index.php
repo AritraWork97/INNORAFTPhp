@@ -53,7 +53,7 @@ session_start(); /* Starts the session */
    <body> 
    <p><a class="btn btn-lg btn-success" href="../LOGIN/logout.php" role="button">Log out</a></p>
    <div class="form-div">
-      <form  action="upload.php" method="POST" onsubmit = "return form_validate()">
+      <form id="form-element" action="upload.php" method="POST">
          <table>
             <tr>
                <td>First Name:</td>

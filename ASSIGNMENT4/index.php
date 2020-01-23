@@ -48,7 +48,7 @@ if(array_key_exists("Active",$_SESSION)){ /* Redirects user to Login.php if not 
    <body> 
       <p><a class="btn btn-lg btn-success" href="../LOGIN/logout.php" role="button">Log out</a></p>
       <div class="form-div">
-      <form id="form-element"  action="upload.php" method="POST" enctype="multipart/form-data" onsubmit = "return form_validate()">
+      <form id="form-element"  action="upload.php" method="POST" enctype="multipart/form-data">
          <table>
             <tr>
                <td>First Name:</td>
