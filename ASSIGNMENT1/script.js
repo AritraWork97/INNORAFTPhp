@@ -14,10 +14,8 @@ lastname.onkeypress = function() {
 lastname.onblur = function(){
    var fname= document.getElementById("firstname").value;
    var sname= document.getElementById("lastname").value;
-    console.log("Function working");
-    if(form_fullname_validation(fname, sname) == false)
+    if(fname.length > 1 || sname.length > 1)
     {
-       console.log("working")
       fullname.value= fname+' '+sname; 
     }
 }
