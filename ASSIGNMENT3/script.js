@@ -4,36 +4,6 @@ var fullname = document.getElementById("fullname");
 var textarea = document.getElementById("para1");
 var form = document.getElementById("form-element");
 
-function form_validate(fname, sname)
-{
-   if(fname.length <= 1 || sname.length <= 1)
-   {
-      return true;
-   }
-   else
-   {
-      return false;
-   }
-   
-}
-
-
-function form_fullname_validation(fname, sname)
-{
-   
-   if(fname.length <= 1 || sname.length <= 1)
-   {
-      return true;
-   }
-   else
-   {
-      return false;
-   }
-   
-}
-
-
-
 firstname.onkeypress = function() {
    return ((event.charCode > 64 && event.charCode < 91) ||(event.charCode > 96 && event.charCode < 123))
 }

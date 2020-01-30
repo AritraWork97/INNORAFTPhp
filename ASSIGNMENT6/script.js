@@ -15,10 +15,8 @@ lastname.onkeypress = function() {
 lastname.onblur = function(){
    var fname= document.getElementById("firstname").value;
    var sname= document.getElementById("lastname").value;
-    console.log("Function working");
-    if(form_fullname_validation(fname, sname) == false)
+    if(fname.length > 1 || sname.length > 1)
     {
-       console.log("working")
       fullname.value= fname+' '+sname; 
     }
 }
@@ -38,7 +36,7 @@ form.onsubmit = function(){
    var phone= document.getElementById("phone").value;
    var email= document.getElementById("email").value;
 
-   if(form_validation(fname, sname, phone, email) == true)
+   if(fname.length <= 1 || sname.length <= 1 || (phone.length < 10 || phone.length > 14) || email.length <= 3)
    {
       console.log("form error");
       return false;
@@ -46,26 +44,5 @@ form.onsubmit = function(){
    else
    {
       return true;
-   }
-}
-
-function form_fullname_validation(fname, sname){
-   if(fname.length <= 1 || sname.length <= 1){
-      return true;
-   }
-   else
-   {
-      return false;
-   }
-}
-
-function form_validation(fname, sname, phone, email){
-   if(fname.length <= 1 || sname.length <= 1 || (phone.length < 10 || phone.length > 14) || email.length <= 3)
-   {
-      return true;
-   }
-   else
-   {
-      return false;
    }
 }
