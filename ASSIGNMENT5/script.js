@@ -2,6 +2,7 @@ var firstname = document.getElementById("firstname");
 var lastname = document.getElementById("lastname");
 var textarea = document.getElementById("para1");
 var phone = document.getElementById("phone");
+var mail = document.getElementById("email");
 var form = document.getElementById("form-element");
 
 firstname.onkeypress = function() {
@@ -33,6 +34,20 @@ textarea.onkeypress = function() {
 
 phone.onkeypress = function(){
    return ((event.charCode > 48 && event.charCode <= 57) ||  event.charCode == 43)
+}
+
+phone.onblur = function() {
+   var phone= document.getElementById("phone").value;
+   if(phone.length < 10 || phone.length > 14) {
+      alert("Invalid Phone number");
+   }
+}
+
+email.onblur = function() {
+   var email= document.getElementById("email").value;
+   if(email.length <=4) {
+      alert("Enter a valid email");
+   }
 }
 
 form.onsubmit = function(){

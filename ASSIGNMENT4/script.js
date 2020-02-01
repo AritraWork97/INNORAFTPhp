@@ -35,6 +35,13 @@ phone.onkeypress = function(){
    return ((event.charCode > 48 && event.charCode <= 57) ||  event.charCode == 43)
 }
 
+phone.onblur = function() {
+   var phone= document.getElementById("phone").value;
+   if(phone.length < 10 || phone.length > 14) {
+      alert("Invalid Phone number");
+   }
+}
+
 form.onsubmit = function(){
    var fname= document.getElementById("firstname").value;
    var sname= document.getElementById("lastname").value;
